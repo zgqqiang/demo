@@ -14,8 +14,11 @@ echo 'export PATH=$PATH:$GOROOT/bin' >> /etc/profile
 source /etc/profile
 
 # 配置GOPROXY和GO111MODULE
-go env -w GOPROXY=https://goproxy.cn,direct
+# go env -w GOPROXY=https://goproxy.cn,direct
 go env -w GO111MODULE=on
+go env -w CGO_ENABLED=0
+
+rm -rf go1.21.4.linux-amd64.tar.gz
 
 echo "Go安装和配置完成!"
 
@@ -28,4 +31,6 @@ tar -zxf helm-v3.5.3-linux-amd64.tar.gz
 # 移动并给予执行权限
 sudo mv linux-amd64/helm /usr/local/bin/helm
 sudo chmod +x /usr/local/bin/helm
+
+rm -rf helm-v3.5.3-linux-amd64.tar.gz
 echo "helm安装和配置完成!"

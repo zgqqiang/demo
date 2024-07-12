@@ -2,7 +2,7 @@ FROM golang:1.21.4-alpine AS builder
 WORKDIR /app
 ADD . .
 ENV CGO_ENABLED=0
-ENV go mod tidy
+RUN go mod tidy
 RUN go build -o k8s-service main.go
 
 FROM alpine:latest

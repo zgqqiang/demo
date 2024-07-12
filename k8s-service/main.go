@@ -9,7 +9,6 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/apache/skywalking-go"
 	"github.com/gin-gonic/gin"
 )
 

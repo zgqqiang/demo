@@ -7,5 +7,5 @@ versions:
 image: 10.64.17.48:30085/demo/k8s-service:latest
 replicas: 1
 skywalking:
-  enable: true
+  enable: false
   service: skywalking-oap.istio-system.svc.cluster.local:11800

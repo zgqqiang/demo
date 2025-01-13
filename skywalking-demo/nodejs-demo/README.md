@@ -1,8 +1,6 @@
 ## 1、依赖包
 
-```
-https://www.apache.org/dyn/closer.cgi/skywalking/go/0.5.0/apache-skywalking-go-0.5.0-bin.tgz
-```
+不需要下载
 
 ## 2、配置参数
   

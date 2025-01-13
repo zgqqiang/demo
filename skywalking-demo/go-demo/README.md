@@ -29,7 +29,7 @@ skywalking-go/bin/skywalking-go-agent--darwin-amd64 -inject path/to/your-project
 
 格式、环境变量名称可以参考配置参数
 ### 4.1、环境变量设置
-```json
+```shell
 export SW_AGENT_NAME=<your_service_name>
 export SW_AGENT_REPORTER_GRPC_BACKEND_SERVICE=<skywalking_service>
 ```

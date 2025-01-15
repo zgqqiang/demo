@@ -43,7 +43,7 @@ agent:
 ## 5、构建
 ```go
 # 需要使用-toolexec
-sudo go build -toolexec "path/to/skywalking-go-agent -config config.yaml"
+go build -toolexec "path/to/skywalking-go-agent -config config.yaml" -a
 ```
 
 ## 6、demo示例
